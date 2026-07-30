@@ -1,10 +1,3 @@
-name: EinkSync
-package: community.lazycat.app.einksync
-version: 0.1.0
-min_os_version: 1.3.8
-homepage: https://github.com/xiaokun567/EinkSync
-description: 专为墨水屏打造的阅读伴侣
-author: xiaokun567
 application:
   subdomain: einksync
   background_task: true
@@ -23,11 +16,3 @@ services:
       - /lzcapp/var/data:/app/data
       - /lzcapp/var/downloads:/app/downloads
       - /lzcapp/var/library:/app/library
-
-locales:
-  zh:
-    name: "EinkSync"
-    description: "专为墨水屏打造的阅读伴侣"
-  en:
-    name: "EinkSync"
-    description: "a reading companion for e-ink screens"

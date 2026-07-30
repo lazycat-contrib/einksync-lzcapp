@@ -2,7 +2,7 @@
 manifest: ./manifest.yml
 
 # pkgout: lpk 包的输出路径
-pkgout: ./
+pkgout: ./build
 # contentdir: 指定打包的内容，将会打包到 lpk 中
 #contentdir: ./dist
 icon: ./icon.png
