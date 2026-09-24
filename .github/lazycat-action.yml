@@ -28,24 +28,12 @@ images:
     sort: created
     tag_regex: '^latest$'
     delivery:
-      mode: lazycat
+      mode: mirror
+      require_digest_match: true
 
 stores:
   official:
-    enabled: true
-    skip_if_version_exists: true
-    create_if_missing: true
-    changelog_locales: [zh, en]
-    retry:
-      enabled: false
-      max_attempts: 3
-      initial_delay: 2s
-      max_delay: 30s
-    application:
-      language: zh
-      name: EinkSync
-      source: https://github.com/xiaokun567/EinkSync
-      source_author: xiaokun567
+    enabled: false
   private:
     enabled: true
     skip_if_version_exists: true
